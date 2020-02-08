@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, 300px); */
+    /* Con auto-fit no se generan columnas extras cuando hay extra espacio */
+    /* minmax nos deja definir un minmo y maximo al tamano de las img */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;;
+}
+
+.gallery img{
+    width: 100%;
+}
