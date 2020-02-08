@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1{
+    background: blue;
+}
+
+.box2{
+    background: green;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.box3{
+    background: red;
+}
+
+main{
+    display: grid;
+    height: 100vh;
+    /*En grid template colums definimos el tamano y cantidad de las columnas, ya sea en pixeles, fracciones(fr) o porcentajes*/
+    grid-template-columns:1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+}
+
+.box3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*Opcionalmente podemos acortarlo a 
+    grid-colum: 1/3;
+    */
+}
+
