@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows:    10% 80% 10%;
+}
+
+#borde1{
+    background: lightblue;
+    grid-column: 1/6;
+}
+
+#borde2{
+    background: lightblue;
+    grid-row: 3/4;
+    grid-column: 1/6;
+}
+
+#borde3{
+    background: lightblue;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#borde4{
+    background: lightblue;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+
+.mainBox{
+    display: grid;
+    height: 100%;
+    background: green;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:    1fr 1fr 1fr 1fr 1fr;
+}
+
+.mainBox{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.box1{
+    background: blue;
+    grid-row: 1/2;
+    grid-column: 1/6;
+}
+.box2{
+    background: blueviolet;
+    grid-row: 2/3;
+    grid-column: 1/6;
+}
+.box3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background: burlywood;
+    grid-row: 3/4;
+    grid-column: 1/6;
+}
+#box31{
+    background: lightpink;
+    grid-column: 1/2;
+}
+#box32{
+    background: gray;
+    grid-column: 2/3;
+}
+#box33{
+    background: lightpink;
+    grid-column: 3/4;
+}
+.box4{
+    background: cadetblue;
+    grid-row: 4/5;
+    grid-column: 1/6;
+}
+.box5{
+    background: green;
+    grid-row: 5/6;
+    grid-column: 1/6;
+}
